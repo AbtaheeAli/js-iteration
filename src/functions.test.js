@@ -25,9 +25,9 @@
  *    // your code here
  * }
  */
-
-// ...
-
+const yelling = array => {
+  return array.map(word => word.toUpperCase())
+}
 /**
  *
  * 2) Define a function named `doubleTrouble` that takes an array of
