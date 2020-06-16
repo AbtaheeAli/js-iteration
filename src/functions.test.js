@@ -60,7 +60,9 @@ const onlyTheEvenSurvive = array => {
  * 5) Define a function onlyTheEvenIndexedSurvive that accepts an array of
  * numbers and returns only the elements at indexes that are even
  */
-
+const onlyTheEvenIndexedSurvive = array => {
+  return array.filter((number, index) => index % 2 === 0)
+}
 /*
  * 6)  Define a function bestMoviesOfTheYear that accepts an array of
  * movie objects AND a year and returns the names of movies that are
