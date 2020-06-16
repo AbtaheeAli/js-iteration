@@ -130,7 +130,14 @@ const someoneToLove = character => {
  * So no using forEach, map, filter, reduce, etc.
  */
 
-// ...
+const mapYourself = array => {
+  let doubleArray = []
+  for (let index = 0; index < array.length; index++) {
+    const double = array[index] * 2
+    doubleArray.push(double)
+  }
+  return doubleArray
+}
 
 /*
  * 12) Define a function filterYourself that accepts an
