@@ -108,8 +108,9 @@ const findTheNeedle = needle => {
  * strings and returns the index of the string that contains
  *  the word `needle` inside
  */
-
-// ...
+const findTheNeedleIndex = needle => {
+  return needle.findIndex(onestring => onestring.includes('needle'))
+}
 
 /*
  *` 10)  Define a function someoneToLove that accepts an array of
