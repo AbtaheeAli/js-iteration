@@ -77,7 +77,11 @@ const onlyTheEvenIndexedSurvive = array => {
  * }
  */
 
-// ...
+const bestMoviesOfTheYear = (movie, year) => {
+  return movie
+    .filter(movies => movies.year === year && movies.score > 90)
+    .map(movies => movies.name)
+}
 
 /*
  * 7) Define a function everyoneIsOdd that accepts an array of
