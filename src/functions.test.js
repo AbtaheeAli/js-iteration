@@ -118,8 +118,9 @@ const findTheNeedleIndex = needle => {
  * four characters long
  */
 
-// ...
-
+const someoneToLove = character => {
+  return character.some(words => words.length === 4)
+}
 /*
  * 11) Define a function mapYourself that accepts an array of
  * numbers and returns a new array where each number is doubled.
