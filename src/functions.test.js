@@ -89,7 +89,9 @@ const bestMoviesOfTheYear = (movie, year) => {
  * odd.
  */
 
-// ...
+const everyoneIsOdd = number => {
+  return number.every(numbers => numbers % 2 === 1)
+}
 
 /*
  * 8) Define a function findTheNeedle that accepts an array of
