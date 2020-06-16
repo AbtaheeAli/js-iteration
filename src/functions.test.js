@@ -130,10 +130,10 @@ const someoneToLove = character => {
  * So no using forEach, map, filter, reduce, etc.
  */
 
-const mapYourself = array => {
+const mapYourself = number => {
   let doubleArray = []
-  for (let index = 0; index < array.length; index++) {
-    const double = array[index] * 2
+  for (let index = 0; index < number.length; index++) {
+    const double = number[index] * 2
     doubleArray.push(double)
   }
   return doubleArray
@@ -149,7 +149,16 @@ const mapYourself = array => {
  * So no using forEach, map, filter, reduce, etc.
  */
 
-// ...
+const filterYourself = number => {
+  let evenNumber = []
+  for (let index = 0; index < number.length; index++) {
+    if (number[index] % 2 === 0) {
+      const even = number[index]
+      evenNumber.push(even)
+    }
+  }
+  return evenNumber
+}
 
 /*
  * 13) Define a function everyYourself that accepts an
@@ -161,7 +170,14 @@ const mapYourself = array => {
  * So no using forEach, map, filter, reduce, etc.
  */
 
-// ...
+const everyYourself = number => {
+  for (let index = 0; index < number.length; index++) {
+    if (number[index] % 2 === 1) {
+      return false
+    }
+  }
+  return true
+}
 
 /**
  * NOTE: Don't modify anything below this line...
@@ -360,12 +376,10 @@ test('Function Check - filter yourself', t =>
   ensureDefined(t, 'filterYourself'))
 test('filterYourself()', t => {
   const original = Array.prototype.filter
-
   Array.prototype.filter = () => []
-
-  t.deepEqual(filterYourself([8, 1, 2, 3]), [8, 2])
-
+  const result = filterYourself([8, 1, 2, 3])
   Array.prototype.filter = original
+  t.deepEqual(result, [8, 2])
 })
 
 test('Function Check - Every Yourself', t => ensureDefined(t, 'everyYourself'))
