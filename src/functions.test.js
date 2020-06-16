@@ -99,7 +99,9 @@ const everyoneIsOdd = number => {
  * `needle` inside
  */
 
-// ...
+const findTheNeedle = needle => {
+  return needle.find(onestring => onestring.includes('needle'))
+}
 
 /*
  * 9) Define a function findTheNeedleIndex that accepts an array of
