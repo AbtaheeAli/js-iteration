@@ -35,29 +35,31 @@ const yelling = array => {
  * the numbers multiplied by 2
  */
 
-// ...
+const doubleTrouble = array => {
+  return array.map(number => number * 2)
+}
 
 /*
  * 3) Define a function stringyIndexes() that takes an array of
  * strings as an argument and returns a new array with each string
  * suffixed with " is at index X" where X is the index of the element
  */
-
-// ...
+const stringyIndexes = array => {
+  return array.map((data, index) => `${data} is at index ${index}`)
+}
 
 /*
  * 4) Define a function onlyTheEvenSurvive that accepts an array of
  * numbers and returns only the elements that are even
  */
-
-// ...
+const onlyTheEvenSurvive = array => {
+  return array.filter(number => number % 2 === 0)
+}
 
 /*
  * 5) Define a function onlyTheEvenIndexedSurvive that accepts an array of
  * numbers and returns only the elements at indexes that are even
  */
-
-// ...
 
 /*
  * 6)  Define a function bestMoviesOfTheYear that accepts an array of
